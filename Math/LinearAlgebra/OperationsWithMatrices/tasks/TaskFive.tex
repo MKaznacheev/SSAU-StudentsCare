@@ -1,0 +1,70 @@
+\subsection{1.1.53}
+
+Найдём значение матричного многочлена $f(A)$, где
+\[
+f(X)=2X^2-3X+E,\quad A=
+\begin{pmatrix}
+	1 & 0 \\
+	0 & -1
+\end{pmatrix}
+.
+\]
+Рассмотрим слагаемые выражения
+\[
+f(A)=2A^2-3A+E
+\]
+по отдельности. Начнём с первого:
+\[
+2A^2=2(A\cdot A)=2\cdot
+\begin{pmatrix}
+	1 & 0 \\
+	0 & -1
+\end{pmatrix}
+\cdot
+\begin{pmatrix}
+	1 & 0 \\
+	0 & -1
+\end{pmatrix}
+=2\cdot
+\begin{pmatrix}
+	1 & 0 \\
+	0 & 1
+\end{pmatrix}
+=2E.
+\]
+Заметим, что
+\[
+f(A)=2E-3A+E=3E-3A=3(E-A).
+\]
+При этом
+\[
+E-A=
+\begin{pmatrix}
+	1 & 0 \\
+	0 & 1
+\end{pmatrix}
+-
+\begin{pmatrix}
+	1 & 0 \\
+	0 & -1
+\end{pmatrix}
+=
+\begin{pmatrix}
+	0 & 0 \\
+	0 & 2
+\end{pmatrix},
+\]
+а значит,
+\[
+f(A)=3\cdot
+\begin{pmatrix}
+	0 & 0 \\
+	0 & 2
+\end{pmatrix}
+=
+\begin{pmatrix}
+	0 & 0 \\
+	0 & 6
+\end{pmatrix}
+.
+\]

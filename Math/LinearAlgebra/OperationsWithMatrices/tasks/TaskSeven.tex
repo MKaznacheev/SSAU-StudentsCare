@@ -1,0 +1,61 @@
+\subsection{1.1.64}
+
+Проверим, коммутируют ли матрицы
+\[
+A=
+\begin{pmatrix}
+	2 & -1 & 0 \\
+	3 & 2 & 5 \\
+	4 & -2 & 7
+\end{pmatrix}
+\quad\text{и}\quad B=
+\begin{pmatrix}
+	-2 & 1 & 0 \\
+	-3 & -2 & 5 \\
+	-4 & 2 & -7
+\end{pmatrix}
+.
+\]
+Для этого найдём их произведения:
+\[
+AB=
+\begin{pmatrix}
+	2 & -1 & 0 \\
+	3 & 2 & 5 \\
+	4 & -2 & 7
+\end{pmatrix}
+\cdot
+\begin{pmatrix}
+	-2 & 1 & 0 \\
+	-3 & -2 & 5 \\
+	-4 & 2 & -7
+\end{pmatrix}
+=
+\begin{pmatrix}
+	-1 & 4 & -5 \\
+	-32 & 9 & -25 \\
+	-30 & 22 & -59
+\end{pmatrix}
+,
+\]
+\[
+BA=
+\begin{pmatrix}
+	-2 & 1 & 0 \\
+	-3 & -2 & 5 \\
+	-4 & 2 & -7
+\end{pmatrix}
+\cdot
+\begin{pmatrix}
+	2 & -1 & 0 \\
+	3 & 2 & 5 \\
+	4 & -2 & 7
+\end{pmatrix}
+=
+\begin{pmatrix}
+	-1 & 4 & 5 \\
+	8 & -11 & 25 \\
+	-30 & 22 & -39
+\end{pmatrix}.
+\]
+Как видно, $AB\neq BA$, а значит матрицы $A$ и $B$ не коммутируют.

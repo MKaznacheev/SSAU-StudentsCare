@@ -1,0 +1,72 @@
+\subsection{1.1.44}
+
+Найдём всевозможные произведения матриц
+\[
+A=
+\begin{pmatrix}
+	3 & 5 & -1 \\
+	2 & -2 & 0
+\end{pmatrix}
+,\quad B=
+\begin{pmatrix}
+	2 & 4 \\
+	-3 & 0 \\
+	5 & 1
+\end{pmatrix}
+.
+\]
+Заметим, что матрица $A$ имеет размер $2\times 3$, а матрица $B$ --- размер $3\times 2$. Видно, что определено как произведение $AB$, так и $BA$. Найдём их:
+\begin{multline*}
+AB=
+\begin{pmatrix}
+	3 & 5 & -1 \\
+	2 & -2 & 0
+\end{pmatrix}
+\cdot
+\begin{pmatrix}
+	2 & 4 \\
+	-3 & 0 \\
+	5 & 1
+\end{pmatrix}
+= \\
+=
+\begin{pmatrix}
+	3\cdot2+5\cdot(-3)+(-1)\cdot5 & 3\cdot4+5\cdot0+(-1)\cdot1 \\
+	2\cdot2+(-2)\cdot(-3)+0\cdot5 & 2\cdot4+(-2)\cdot0+0\cdot1
+\end{pmatrix}
+= \\
+=
+\begin{pmatrix}
+	-14 & 11 \\
+	10 & 8
+\end{pmatrix}
+,
+\end{multline*}
+\begin{multline*}
+BA=
+\begin{pmatrix}
+	2 & 4 \\
+	-3 & 0 \\
+	5 & 1
+\end{pmatrix}
+\cdot
+\begin{pmatrix}
+	3 & 5 & -1 \\
+	2 & -2 & 0
+\end{pmatrix}
+= \\
+=
+\begin{pmatrix}
+	2\cdot3+4\cdot2 & 2\cdot5+4\cdot(-2) & 2\cdot(-1)+4\cdot0 \\
+	-3\cdot3+0\cdot2 & -3\cdot5+0\cdot(-2) & -3\cdot(-1)+0\cdot0 \\
+	5\cdot3+1\cdot2 & 5\cdot5+1\cdot(-2) & 5\cdot(-1)+1\cdot0
+\end{pmatrix}
+= \\
+=
+\begin{pmatrix}
+	14 & 2 & -2 \\
+	-9 & -15 & 3 \\
+	17 & 23 & -5
+\end{pmatrix}
+.
+\end{multline*}
