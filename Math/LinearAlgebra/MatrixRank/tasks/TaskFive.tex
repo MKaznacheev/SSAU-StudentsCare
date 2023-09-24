@@ -1,0 +1,40 @@
+\subsection{1.4.50}
+
+Решим уравнение
+\[
+XA=O,
+\]
+где
+\[
+A=
+\begin{pmatrix}
+	1 & 2 \\
+	3 & 4
+\end{pmatrix}
+,\quad O=
+\begin{pmatrix}
+	0 & 0 \\
+	0 & 0
+\end{pmatrix}.
+\]
+Проверим, существует ли матрица $A^{-1}$:
+\[
+\det(A)=
+\begin{vmatrix}
+	1 & 2 \\
+	3 & 4
+\end{vmatrix}
+=-2.
+\]
+Поскольку $\det(A)\neq0$, то $A^{-1}$ существует. Тогда
+\[
+XA=O\LR XAA^{-1}=OA^{-1}\LR XE=O\LR X=O,
+\]
+поскольку для каждой матрицы $A$ порядка $n$ выполнены условия $AA^{-1}=E$, $AE=A$, $OA=O$. Таким образом,
+\[
+X=
+\begin{pmatrix}
+	0 & 0 \\
+	0 & 0
+\end{pmatrix}.
+\]

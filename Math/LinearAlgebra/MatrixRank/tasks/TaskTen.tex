@@ -1,0 +1,115 @@
+\subsection{2.1.41}
+
+Решим систему
+\[
+\left\{
+\begin{NiceArray}{l}
+	3x_1+2x_2+x_3=5 \\
+	2x_1+3x_2+x_3=1 \\
+	2x_1+x_2+3x_3=11 \\
+	3x_1+4x_2-x_3=-5
+\end{NiceArray}
+\right.\;,
+\]
+если это возможно. Её расширенная матрица выглядит следующим образом:
+\[
+\overline{A}=
+\begin{pNiceArray}{ccc|c}
+	3 & 2 & 1 & 5 \\
+	2 & 3 & 1 & 1 \\
+	2 & 1 & 3 & 11 \\
+	3 & 4 & -1 & -5
+\end{pNiceArray}.
+\]
+Последовательно приведём её к ступенчатому виду следующими преобразованиями:
+\begin{gather*}
+\left\{
+\begin{NiceArray}{l}
+	(2)\to(2)-(3) \\
+	(4)\to(4)-(1)
+\end{NiceArray}
+\right.\;, \\
+\left\{
+\begin{NiceArray}{l}
+	(4)\to(4)-(2) \\
+	(3)\to3\cdot(3)
+\end{NiceArray}
+\right.\;, \\
+(3)\to(3)-2\cdot(1), \\
+(2)\to(2)+2\cdot(3), \\
+(2)\leftrightarrow(3).
+\end{gather*}
+Так,
+\begin{multline*}
+\overline{A}\sim
+\begin{pNiceArray}{ccc|c}
+	3 & 2 & 1 & 5 \\
+	0 & 2 & -2 & -10 \\
+	2 & 1 & 3 & 11 \\
+	0 & 2 & -2 & -10
+\end{pNiceArray}
+\sim
+\begin{pNiceArray}{ccc|c}
+	3 & 2 & 1 & 5 \\
+	0 & 2 & -2 & -10 \\
+	6 & 3 & 9 & 33 \\
+	0 & 0 & 0 & 0
+\end{pNiceArray}
+\sim
+\begin{pNiceArray}{ccc|c}
+	3 & 2 & 1 & 5 \\
+	0 & 2 & -2 & -10 \\
+	0 & -1 & 7 & 23 \\
+	0 & 0 & 0 & 0
+\end{pNiceArray}
+\sim \\
+\sim
+\begin{pNiceArray}{ccc|c}
+	3 & 2 & 1 & 5 \\
+	0 & 0 & 12 & 36 \\
+	0 & -1 & 7 & 23 \\
+	0 & 0 & 0 & 0
+\end{pNiceArray}
+\sim
+\begin{pNiceArray}{ccc|c}
+	3 & 2 & 1 & 5 \\
+	0 & -1 & 7 & 23 \\
+	0 & 0 & 12 & 36 \\
+	0 & 0 & 0 & 0
+\end{pNiceArray}.
+\end{multline*}
+Как мы видим, $\Rk(A)=\Rk\left(\overline{A}\right)=3$, где $A$ --- основная матрица системы. Тогда по теореме Кронекера-Капелли, исходная система совместна. Поскольку ранг совпадает с числом неизвестных, то система определённая. Возвращаясь к преобразованной ранее матрице, получим систему уравнений, эквивалентную исходной:
+\[
+\left\{
+\begin{NiceArray}{l}
+	3x_1+2x_2+x_3=5 \\
+	-x_2+7x_3=23 \\
+	12x_3=36
+\end{NiceArray}
+\right.
+\;\LR
+\left\{
+\begin{NiceArray}{l}
+	x_1=\dfrac{5-2x_2-x_3}{3} \\
+	x_2=7x_3-23 \\
+	x_3=3
+\end{NiceArray}
+\right.
+\;\LR
+\left\{
+\begin{NiceArray}{l}
+	x_1=2 \\
+	x_2=-2 \\
+	x_3=3
+\end{NiceArray}
+\right.\;.
+\]
+Таким образом, система имеет однозначное решение:
+\[
+X=
+\begin{pmatrix}
+	2 \\
+	-2 \\
+	3
+\end{pmatrix}.
+\]

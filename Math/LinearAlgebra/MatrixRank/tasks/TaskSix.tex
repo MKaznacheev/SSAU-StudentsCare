@@ -1,0 +1,145 @@
+\subsection{1.4.57}
+
+Решим матричное уравнение:
+\[
+AX=B,
+\]
+где
+\[
+A=
+\begin{pmatrix}
+	1 & -2 & 3 \\
+	2 & 3 & -1 \\
+	0 & -2 & 1
+\end{pmatrix}
+,\quad B=
+\begin{pmatrix}
+	2 \\
+	-1 \\
+	3
+\end{pmatrix}.
+\]
+Проверим, существует ли матрица, обратная к матрице $A$:
+\[
+\det(A)=
+\begin{vmatrix}
+	1 & -2 & 3 \\
+	2 & 3 & -1 \\
+	0 & -2 & 1
+\end{vmatrix}
+=-7.
+\]
+Поскольку $\det(A)\neq0$, то $A^{-1}$ существует. Найдём её:
+\begin{multline*}
+(A|E)=
+\begin{pNiceArray}{ccc|ccc}
+	1 & -2 & 3 & 1 & 0 & 0 \\
+	2 & 3 & -1 & 0 & 1 & 0 \\
+	0 & -2 & 1 & 0 & 0 & 1
+\end{pNiceArray}
+\sim
+\begin{pNiceArray}{ccc|ccc}
+	1 & -2 & 3 & 1 & 0 & 0 \\
+	0 & 7 & -7 & -2 & 1 & 0 \\
+	0 & -2 & 1 & 0 & 0 & 1
+\end{pNiceArray}
+\sim \\
+\sim
+\begin{pNiceArray}{ccc|ccc}
+	1 & -2 & 3 & 1 & 0 & 0 \\
+	0 & 14 & -14 & -4 & 2 & 0 \\
+	0 & -14 & 7 & 0 & 0 & 7
+\end{pNiceArray}
+\sim
+\begin{pNiceArray}{ccc|ccc}
+	1 & -2 & 3 & 1 & 0 & 0 \\
+	0 & 0 & -7 & -4 & 2 & 7 \\
+	0 & -14 & 7 & 0 & 0 & 7
+\end{pNiceArray}
+\sim \\
+\sim
+\begin{pNiceArray}{ccc|ccc}
+	1 & -2 & 3 & 1 & 0 & 0 \\
+	0 & 0 & -7 & -4 & 2 & 7 \\
+	0 & -14 & 0 & -4 & 2 & 14
+\end{pNiceArray}
+\sim
+\begin{pNiceArray}{ccc|ccc}
+	1 & -2 & 3 & 1 & 0 & 0 \\
+	0 & 0 & 1 & \dfrac{4}{7} & -\dfrac{2}{7} & -1 \\
+	0 & 1 & 0 & \dfrac{2}{7} & -\dfrac{1}{7} & -1
+\end{pNiceArray}
+\sim \\
+\sim
+\begin{pNiceArray}{ccc|ccc}
+	1 & -2 & 3 & 1 & 0 & 0 \\
+	0 & 1 & 0 & \dfrac{2}{7} & -\dfrac{1}{7} & -1 \\
+	0 & 0 & 1 & \dfrac{4}{7} & -\dfrac{2}{7} & -1
+\end{pNiceArray}
+\sim
+\begin{pNiceArray}{ccc|ccc}
+	1 & 0 & 0 & -\dfrac{1}{7} & \dfrac{4}{7} & 1 \\
+	0 & 1 & 0 & \dfrac{2}{7} & -\dfrac{1}{7} & -1 \\
+	0 & 0 & 1 & \dfrac{4}{7} & -\dfrac{2}{7} & -1
+\end{pNiceArray}
+=\left(E|A^{-1}\right).
+\end{multline*}
+При этом последовательно были выполнены следующие преобразования\footnotemark:
+\begin{gather*}
+(2)\to(2)-2\cdot(1), \\
+\left\{
+\begin{NiceArray}{l}
+	(2)\to2\cdot(2) \\
+	(3)\to7\cdot(3)
+\end{NiceArray}
+\right.\;, \\
+(2)\to(2)+(3), \\
+(3)\to(3)+(2), \\
+\left\{
+\begin{NiceArray}{l}
+	(2)\to-\dfrac{1}{7}\cdot(2) \\
+	(3)\to-\dfrac{1}{14}\cdot(3)
+\end{NiceArray}
+\right.\;,
+\end{gather*}
+
+\footnotetext{Запись "$(n)\to(n)+a\cdot(m)$"{} следует понимать, как прибавление к строке под номером $n$ строки под номером $m$, умноженной на число $a$. Запись "$(m)\leftrightarrow(n)$"\ означает перемену мест строками $m$ и $n$ между собой.}
+
+\begin{gather*}
+(2)\leftrightarrow(3), \\
+(1)\to(1)+2\cdot(2)-3\cdot(3).
+\end{gather*}
+Как мы видим,
+\[
+A^{-1}=
+\begin{pNiceMatrix}
+	-\dfrac{1}{7} & \dfrac{4}{7} & 1 \\
+	\dfrac{2}{7} & -\dfrac{1}{7} & -1 \\
+	\dfrac{4}{7} & -\dfrac{2}{7} & -1
+\end{pNiceMatrix}.
+\]
+Тогда, аналогично предыдущей задаче,
+\[
+AX=B\LR A^{-1}AX=A^{-1}B\LR EX=X=A^{-1}B.
+\]
+То есть
+\[
+X=
+\begin{pNiceMatrix}
+	-\dfrac{1}{7} & \dfrac{4}{7} & 1 \\
+	\dfrac{2}{7} & -\dfrac{1}{7} & -1 \\
+	\dfrac{4}{7} & -\dfrac{2}{7} & -1
+\end{pNiceMatrix}
+\cdot
+\begin{pmatrix}
+	2 \\
+	-1 \\
+	3
+\end{pmatrix}
+=
+\begin{pNiceMatrix}
+	\dfrac{15}{7} \\
+	-\dfrac{16}{7} \\
+	-\dfrac{11}{7}
+\end{pNiceMatrix}.
+\]
