@@ -1,0 +1,29 @@
+\subsection{9}
+
+Известно, что река течёт со скоростью $V=3\;\text{км/ч}$, а лодка плывет со скоростью $u=6\;\text{км/ч}$ относительно неё. Чтобы лодка проплыла поперёк реки, её скорость~$\vec U$ относительно земли должна быть направлена перпендикулярно течению. Тогда, для компенсанции последнего, скорость лодки $\vec u$ относительно воды должна быть направлена так, как показано на рисунке~\ref{PicOne}.
+\begin{figure}[h!]
+	\begin{center}
+		\begin{tikzpicture}
+			\draw [rounded corners=6] (0,0.4) -- (0.4,0) foreach \x in {0.8,1.6,...,8} {-- (\x,0.4) -- (\x+0.4,0)};
+			\draw [rounded corners=6] (0,3.4) -- (0.4,3) foreach \x in {0.8,1.6,...,8} {-- (\x,3.4) -- (\x+0.4,3)};
+			\draw [arrows = {-Stealth[scale=1]}, thick] (4,2.5) to node [sloped, above right] {$\vec V$} (6,2.5);
+			\draw [arrows = {-Stealth[scale=1]}, thick] (4,2.5) to node [right] {$\vec U$}  (4,1);
+			\draw [arrows = {-Stealth[scale=1]}, thick] (4,2.5) to node [above left] {$\vec u$}  (2,1);
+			\draw [densely dashed] (2,1) -- (4,1) -- (6,2.5);
+			\draw [densely dashed] (4,2.5) -- (2,2.5) -- (2,1);
+			\draw (2,2.2) -- (2.3,2.2) -- (2.3,2.5);
+			\draw (3.3,2.5) arc [start angle=180, end angle = 218, radius=0.7];
+			\draw node at (3.5,2.35) {$\alpha$};
+		\end{tikzpicture}
+		\caption{}\label{PicOne}
+	\end{center}
+\end{figure}
+
+Через $\alpha$ обозначим угол между вектором $\vec u$ и линией берега. Из рисунка видно, что
+\[
+\cos\alpha=\frac{V}{u},
+\]
+а значит,
+\[
+\alpha=\arccos\frac{V}{u}=\arccos\frac{3}{6}=\arccos\frac{1}{2}=60^\circ.
+\]
