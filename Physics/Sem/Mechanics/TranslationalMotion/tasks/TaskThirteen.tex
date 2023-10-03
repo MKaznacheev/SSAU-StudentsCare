@@ -6,42 +6,29 @@ x_1=20+4t-4t^2,\quad x_2=2+t+0{,}5t^2.
 \]
 Очевидно, что
 \[
-s_1=|x_1-20|=\left|4t-4t^2\right|\Rightarrow
-\left[
-\begin{NiceArray}{ll}
-	s_1=4t^2-4t, & \text{при $t\Geq1$} \\
-	s_1=4t-4t^2, & \text{при $0\Leq t<1$}
-\end{NiceArray}
-\right.
+\vec r_1=x_1\vec i
 \]
 и
 \[
-s_2=|x_2-2|=\left|t+0{,}5t^2\right|=t+0{,}5t^2.
+\vec r_2=x_2\vec i,
 \]
-Тогда
+где $i=1$. Тогда
 \[
-v_1=\left|\frac{ds_1}{dt}\right|=
-\left[
-\begin{NiceArray}{ll}
-	8t-4, & \text{при $t\Geq1$} \\
-	|4-8t|, & \text{при $0\Leq t<1$}
-\end{NiceArray}
-\right.
-,\quad a_1=\left|\frac{dv_1}{dt}\right|=8\;\text{м/с}^2
+\vec v_1=\frac{d\vec r_1}{dt}=(4-8t)\vec i,\quad\vec a_1=\frac{d\vec v_1}{dt}=-8\vec i
 \]
 и
 \[
-v_2=\frac{ds_1}{dt}=1+t,\quad a_2=\frac{dv_1}{dt}=1\;\text{м/с}^2.
+\vec v_2=\frac{d\vec r_2}{dt}=(1+t)\vec i,\quad \vec a_2=\frac{d\vec v_2}{dt}=\vec i.
 \]
 Вычислим момент времени, когда скорости точек совпадут:
 \[
-v_1=v_2\LR8t_0-4=1+t_0\LR t_0=\frac{5}{7}\approx0{,}71\;\text{с}.
+\vec v_1=\vec v_2\LR(4-8t)\vec i=(1+t)\vec i\LR4-8t=1+t\LR t=\frac{1}{3}\approx0{,}33\;\text{с}.
 \]
 При этом
 \[
-v_1(t_0)=8\cdot0{,}71-4=1{,}68\;\text{м/с},\quad v_2(t_0)=1+0{,}71=1{,}71\;\text{м/с}
+v_1(t_0)=v_2(t_0)=1+\frac{1}{3}=\frac{4}{3}\approx1{,}33\;\text{м/с}.
 \]
-и
+Ускорения постоянны в любой момент времени, поэтому
 \[
 a_1(t_0)=8\;\text{м/с}^2,\quad a_2(t_0)=1\;\text{м/с}^2.
 \]
