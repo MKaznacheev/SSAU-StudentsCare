@@ -1,0 +1,63 @@
+\subsection{17}
+
+Материальная точка совершает равномерное движение ($v=5\;\text{м/с}$) по окружности радиусом $R=5\;\text{м}$. При этом $\Delta r=0\;\text{м}$ в начальный момент времени. Путь точки вычисляется по по формуле
+\[
+S=vt=5t.
+\]
+На рисунке~\ref{PicOne} показан соответствующий график.
+
+\begin{figure}[h!]
+	\begin{center}
+		\begin{tikzpicture}
+			\draw [arrows = {-Stealth[scale=1]}, thick] (0,0) -- (8,0);
+			\draw [arrows = {-Stealth[scale=1]}, thick] (0,0) -- (0,6);
+			\draw (8,-0.2) node {$t$};
+			\draw (-0.2,6) node {$S$};
+			\draw (-0.15,-0.15) node {$0$};
+			\draw (-0.1,5) -- (0.1,5);
+			\draw (-0.3,5) node {$5$};
+			\draw (1,-0.1) -- (1,0.1);
+			\draw (1,-0.3) node {$1$};
+			\draw (0,0) -- (1.2,6);
+			\draw [densely dashed] (0,5) -- (1,5) -- (1,0);
+		\end{tikzpicture}
+		\caption{}\label{PicOne}
+	\end{center}
+\end{figure}
+
+Угол поворота радиус вектора вычисляется, как
+\[
+\varphi=\varphi_0+\omega_0t.
+\]
+Поскольку $\varphi=0^\circ$, а так же
+\[
+\omega_0=\frac{v}{R},
+\]
+то
+\[
+\varphi=\frac{v}{R}\cdot t=\frac{5}{5}\cdot t=t.
+\]
+Заметим, что
+\[
+\sin\frac{\varphi}{2}=\frac{\Delta r}{2R}\LR\Delta r=2R\sin\frac{t}{2}=2\cdot5\sin\frac{t}{2}=10\sin\frac{t}{2}
+\]
+при $0\Leq\varphi\Leq\pi$. Это вытекает из взаимного расположения векторов $\vec r$, $\vec r_0$ и $\Delta\vec r$. Чтобы избавиться от ограничения на угол, запишем
+\[
+\Delta r=10\left|\sin\frac{t}{2}\right|,
+\]
+поскольку $\sin\varphi=-\sin(2\pi-\varphi)$. На рисунке~\ref{PicTwo} показан соответствующий график.
+
+\begin{figure}[h!]
+	\begin{center}
+		\begin{tikzpicture}
+			\draw [arrows = {-Stealth[scale=1]}, thick] (0,0) -- (8,0);
+			\draw [arrows = {-Stealth[scale=1]}, thick] (0,0) -- (0,10);
+			\draw (8,-0.2) node {$t$};
+			\draw (-0.3,10.1) node {$\Delta r$};
+			\draw (-0.15,-0.15) node {$0$};
+			 \draw [smooth, domain=0:8] plot (\x,{abs(10*sin(\x/2 r))});
+		\end{tikzpicture}
+		\caption{}\label{PicTwo}
+	\end{center}
+\end{figure}
+

@@ -1,0 +1,87 @@
+\\
+\begin{center}
+	\textbf{\large{Контрольный вопрос 10}}
+\end{center}
+
+Материальная точка движется по окружности радиуса $R$ так, что $a_\tau=\text{const}$ и $v_0=0\;\text{м/с}$. Ввиду этого,
+\[
+\vec a_\tau=\frac{dv}{dt}\cdot\vec\tau=\frac{\Delta v}{\Delta t}\cdot\vec\tau=\frac{v-v_0}{t-t_0}\cdot\vec\tau=\frac{v}{t}\cdot\vec\tau,
+\]
+а значит,
+\[
+v=a_\tau\cdot t.
+\]
+При этом
+\[
+\vec a_n=\frac{v^2}{R}\cdot\vec n=\frac{a_\tau^2\cdot t^2}{R}\cdot\vec n
+\]
+и
+\[
+a_n=\frac{a_\tau^2\cdot t^2}{R}.
+\]
+Тогда
+\[
+\vec a=\vec a_\tau+\vec a_n=a_\tau\cdot\vec\tau+\frac{a_\tau^2\cdot t^2}{R}\cdot\vec n
+\]
+и
+\[
+a=\sqrt{a_\tau^2+a_n^2}=\sqrt{a_\tau^2+\frac{a_\tau^4\cdot t^4}{R^2}}=a_\tau\sqrt{1+\frac{a_\tau^2\cdot t^4}{R^2}}.
+\]
+
+Помимо прочего известно, что
+\[
+v=\omega R,\quad\omega=\omega_0+\varepsilon t.
+\]
+Поскольку $\omega_0=0\;\text{рад/с}$, то
+\[
+v=\varepsilon Rt.
+\]
+Тогда
+\[
+\vec a_n=\frac{v^2}{R}\cdot\vec n=\frac{\varepsilon^2 R^2t^2}{R}\cdot\vec n=\varepsilon^2Rt^2\cdot\vec n.
+\]
+Найдём время из формулы
+\[
+\varphi=\varphi_0+\omega_0t+\frac{\varepsilon t^2}{2}
+\]
+с учётом того, что $\varphi_0=0\;\text{рад}$:
+\[
+t=\sqrt{\frac{2\varphi}{\varepsilon}}.
+\]
+Тогда
+\[
+\vec a_n=2\varphi\varepsilon R\cdot\vec n
+\]
+и
+\[
+a_n=2\varphi\varepsilon R.
+\]
+При этом,
+\[
+\vec a_\tau=\frac{v}{t}\cdot\vec\tau=\frac{\varepsilon Rt}{t}\cdot\vec\tau=\varepsilon R\cdot\vec\tau
+\]
+и
+\[
+a_\tau=\varepsilon R.
+\]
+Значит,
+\[
+\vec a=\vec a_\tau+\vec a_n=\varepsilon R\cdot\vec\tau+2\varphi\varepsilon R\cdot\vec n
+\]
+и
+\[
+a=\sqrt{a_\tau^2+a_n^2}=\sqrt{\varepsilon^2 R^2+4\varphi^2\varepsilon^2R^2}=\varepsilon R\sqrt{1+4\varphi^2}.
+\]
+
+Найдём угол $\alpha$ между векторам полного ускорения материальной точки и её радиус-вектором (выберем некоторый момент времени, в который направления векторов $\vec\tau$ и $\vec n$ совпадут с направлениями осей абсцисс и ординат ортонормированной системы координат соответсвенно):
+\[
+(\vec a,\vec r)=aR\cos\alpha\Rightarrow\alpha=\arccos\frac{(\vec a,\vec r)}{aR}=\arccos\frac{a_\tau R_\tau+a_nR_n}{aR}.
+\]
+Поскольку радиус-вектор точки сонаправлен вектору $\vec n$, то $R_\tau=0$ и $R_n=R$. В таком случае,
+\[
+\alpha=\arccos\frac{a_n}{a}=\arccos\frac{2\varphi\varepsilon R}{\varepsilon R\sqrt{1+4\varphi^2}}=\arccos\cfrac{1}{\sqrt{\cfrac{1}{4\varphi^2}+1}}
+\]
+или
+\[
+\alpha=\arccos\cfrac{\cfrac{a_\tau^2\cdot t^2}{R}}{a_\tau\sqrt{1+\cfrac{a_\tau^2\cdot t^4}{R^2}}}=\arccos\cfrac{1}{\sqrt{\cfrac{R^2}{a_\tau^2t^4}+1}}.
+\]
