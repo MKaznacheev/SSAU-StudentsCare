@@ -1,0 +1,46 @@
+\subsection{17}
+
+Высота клина равна $h=1\;\text{м}$, а длина --- $l=2\text{м}$. Тогда угол между наклонной плоскостью и горизонталью равен
+\[
+\alpha=\arcsin\frac{h}{l}.
+\]
+Расположим ось $Ox$ по направлению движения тела, а ось $Oy$ --- вверх, перпендикулярно наклонной плоскости. Уравнение движения тела принимает вид
+\[
+m\vec g+\vec N +\vec F_\text{тр}=m\vec a,
+\]
+или в проекции на оси абсцисс и ординат соответсвенно,
+\begin{gather*}
+mg\cos(90^\circ-\alpha)-F_\text{тр}=ma, \\
+-mg\sin(90^\circ-\alpha)+N=0,
+\end{gather*}
+то есть
+\begin{gather*}
+mg\sin\alpha-F_\text{тр}=ma, \\
+N=mg\cos\alpha.
+\end{gather*}
+Значит,
+\[
+F_\text{тр}=\mu N=\mu mg\cos\alpha
+\]
+и
+\begin{multline*}
+mg\sin\alpha-\mu mg\cos\alpha=ma\LR \\
+\LR a=g\left(\sin\arcsin\frac{h}{l}-\mu\cos\arcsin\frac{h}{l}\right)= \\
+=\frac{g\left(h-\mu\sqrt{l^2-h^2}\right)}{l}.
+\end{multline*}
+Поскольку $\mu=0{,}15$, то
+\[
+a\approx3{,}63\;\text{м/с}^2.
+\]
+При этом
+\[
+x=x_0+v_0t+\frac{at^2}{2}
+\]
+и $v_0=0\;\text{м/с}$, а значит,
+\[
+l=x-x_0=\frac{at^2}{2}.
+\]
+Тогда
+\[
+t=\sqrt{\frac{2l}{a}}\approx1{,}05\;\text{с}.
+\]

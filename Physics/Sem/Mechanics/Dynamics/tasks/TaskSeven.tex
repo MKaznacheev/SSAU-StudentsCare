@@ -1,0 +1,30 @@
+\subsection{15}
+
+Сила
+\[
+F=F_0\cos\omega t
+\]
+($F_0=\text{const}$, $\omega=\text{const}$) приводит в движение тело массой $m$. При этом известно, что
+\[
+r(0)=0\;\text{м},\quad v(0)=0\;\text{м/с}.
+\]
+Поскольку
+\[
+F=ma\LR F_0\cos\omega t=m\frac{dv}{dt}\LR \frac{F_0}{m}\cos\omega t\,dt=\,dv,
+\]
+то
+\[
+\frac{F_0}{m}\int\cos\omega t\,dt=\int dv\LR \frac{F_0}{m\omega}\sin\omega t=v+v(0)\LR \frac{F_0}{m\omega}\sin\omega t=v.
+\]
+С учетом того, что
+\[
+v=\frac{dr}{dt},
+\]
+имеем
+\[
+\frac{F_0}{m\omega}\sin\omega t=\frac{dr}{dt}\LR \frac{F_0}{m\omega}\sin\omega t\,dt=\,dr.
+\]
+Тогда
+\[
+\frac{F_0}{m\omega}\int\sin\omega t\,dt=\int dr \LR -\frac{F_0}{m\omega^2}\cos\omega t=r+r(0) \LR r=-\frac{F_0}{m\omega^2}\cos\omega t.
+\]
