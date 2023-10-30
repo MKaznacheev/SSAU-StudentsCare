@@ -1,0 +1,47 @@
+\subsection{3.2.16}
+
+Дан четырёхугольник $ABCD$ с вершинами
+\[
+A(-5;3;4),\quad B(-1;-7;5),\quad C(6,-5,-3),\quad D(2;5;-4).
+\]
+Рассмотрим векторы $\overrightarrow{AB}$, $\overrightarrow{BC}$, $\overrightarrow{CD}$, $\overrightarrow{DA}$. Найдём их координаты:
+\begin{gather*}
+\overrightarrow{AB}=\bigl(-1-(-5);-7-3;5-4\bigr)=(4;-10;1), \\
+\overrightarrow{BC}=\bigr(6-(-1);-5-(-7);-3-5\bigl)=(7;2;-8), \\
+\overrightarrow{CD}=\bigr(2-6;5-(-5);-4-(-3)\bigl)=(-4;10;-1), \\
+\overrightarrow{DA}=\bigl(-5-2;3-5;4-(-4)\bigr)=(-7;-2;8),
+\end{gather*}
+и длины (длины сторон четырёхугольника):
+\begin{gather*}
+AB=\sqrt{4^2+(-10)^2+1^2}=3\sqrt{13}, \\
+BC=\sqrt{7^2+2^2+(-8)^2}=3\sqrt{13}, \\
+CD=\sqrt{(-4)^2+10^2+(-1)^2}=3\sqrt{13}, \\
+DA=\sqrt{(-7)^2+(-2)^2+8^2}=3\sqrt{13}.
+\end{gather*}
+Найдём углы четырёхугольника:
+\begin{multline*}
+\angle A=\arccos\frac{\left(\overrightarrow{AB},\overrightarrow{AD}\right)}{AB\cdot AD}=\arccos-\frac{\left(\overrightarrow{AB},\overrightarrow{DA}\right)}{AB\cdot DA}=\pi-\arccos\frac{\left(\overrightarrow{AB},\overrightarrow{DA}\right)}{AB\cdot DA}= \\
+=\pi-\arccos\frac{4\cdot(-7)+(-10)\cdot(-2)+1\cdot8}{\left(3\sqrt{13}\right)^2}=\pi-\arccos0=\pi-\frac{\pi}{2}=\frac{\pi}{2},
+\end{multline*}
+\begin{multline*}
+\angle B=\arccos\frac{\left(\overrightarrow{BA},\overrightarrow{BC}\right)}{BA\cdot BC}=\arccos-\frac{\left(\overrightarrow{AB},\overrightarrow{BC}\right)}{AB\cdot BC}=\pi-\arccos\frac{\left(\overrightarrow{AB},\overrightarrow{BC}\right)}{AB\cdot BC}= \\
+=\pi-\arccos\frac{4\cdot7+(-10)\cdot2+1\cdot(-8)}{\left(3\sqrt{13}\right)^2}=\pi-\arccos0=\pi-\frac{\pi}{2}=\frac{\pi}{2},
+\end{multline*}
+\begin{multline*}
+\angle C=\arccos\frac{\left(\overrightarrow{CB},\overrightarrow{CD}\right)}{CB\cdot CD}=\arccos-\frac{\left(\overrightarrow{BC},\overrightarrow{CD}\right)}{BC\cdot CD}=\pi-\arccos\frac{\left(\overrightarrow{BC},\overrightarrow{CD}\right)}{BC\cdot CD}= \\
+=\pi-\arccos\frac{7\cdot(-4)+2\cdot10+(-8)\cdot(-1)}{\left(3\sqrt{13}\right)^2}=\pi-\arccos0=\pi-\frac{\pi}{2}=\frac{\pi}{2},
+\end{multline*}
+\begin{multline*}
+\angle D=\arccos\frac{\left(\overrightarrow{DA},\overrightarrow{DC}\right)}{DA\cdot DC}=\arccos-\frac{\left(\overrightarrow{DA},\overrightarrow{CD}\right)}{DA\cdot CD}=\pi-\arccos\frac{\left(\overrightarrow{DA},\overrightarrow{CD}\right)}{DA\cdot CD}= \\
+=\pi-\arccos\frac{(-7)\cdot(-4)+(-2)\cdot10+8\cdot(-1)}{\left(3\sqrt{13}\right)^2}=\pi-\arccos0=\pi-\frac{\pi}{2}=\frac{\pi}{2}.
+\end{multline*}
+
+Как мы видим,
+\[
+AB=BC=CD=DA
+\]
+и
+\[
+\angle A=\angle B=\angle C=\angle D=\frac{\pi}{2}.
+\]
+Значит, четырёхугольник $ABCD$ является квадратом.

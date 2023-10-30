@@ -1,0 +1,65 @@
+\subsection{3.2.23}
+
+Вершины треугольника $ABC$ имеют следующие координаты:
+\[
+A(1;1;-1),\quad B(2;3;1),\quad C(3;2;1).
+\]
+Построим векторы
+\begin{gather*}
+\overrightarrow{AB}=\bigl(2-1;3-1;1-(-1)\bigr)=(1;2;2), \\
+\overrightarrow{BC}=\bigl(3-2;2-3;1-1\bigr)=(1;-1;0), \\
+\overrightarrow{CA}=(1-3;1-2;-1-1)=(-2;-1;-2).
+\end{gather*}
+Найдём их длины (дли сторон треугольника $ABC$):
+\begin{gather*}
+AB=\sqrt{1^2+2^2+2^2}=3, \\
+BC=\sqrt{1^2+(-1)^2+0^2}=\sqrt{2}, \\
+CA=\sqrt{(-2)^2+(-1)^2+(-2)^2}=3.
+\end{gather*}
+Найдём углы треугольника:
+\begin{multline*}
+\angle A=\arccos\frac{\left(\overrightarrow{AB},\overrightarrow{AC}\right)}{AB\cdot AC}=\arccos-\frac{\left(\overrightarrow{AB},\overrightarrow{CA}\right)}{AB\cdot CA}= \\
+=\arccos-\frac{1\cdot(-2)+2\cdot(-1)+2\cdot(-2)}{3\cdot3}=\arccos\frac{8}{9},
+\end{multline*}
+\begin{multline*}
+\angle B=\arccos\frac{\left(\overrightarrow{BA},\overrightarrow{BC}\right)}{BA\cdot BC}=\arccos-\frac{\left(\overrightarrow{AB},\overrightarrow{BC}\right)}{AB\cdot BC}= \\
+=\arccos-\frac{1\cdot1+2\cdot(-1)+2\cdot0}{3\sqrt{2}}=\arccos\frac{\sqrt{2}}{6},
+\end{multline*}
+\begin{multline*}
+\angle C=\arccos\frac{\left(\overrightarrow{CA},\overrightarrow{CB}\right)}{CA\cdot CB}=\arccos-\frac{\left(\overrightarrow{CA},\overrightarrow{BC}\right)}{CA\cdot BC}= \\
+=\arccos-\frac{(-2)\cdot1+(-1)\cdot(-1)+(-2)\cdot0}{3\sqrt{2}}=\arccos\frac{\sqrt{2}}{6}.
+\end{multline*}
+
+Поскольку $BD$ --- медиана, точка $D$ имеет следующие координаты:
+\[
+D\left(\frac{1+3}{2};\frac{1+2}{2};\frac{-1+1}{2}\right)\LR D(2;1{,}5;0)
+\]
+из соображения 
+\[
+\overrightarrow{OA}+\frac{1}{2}\overrightarrow{AC}=\overrightarrow{OD}\LR\overrightarrow{OA}+\frac{1}{2}\left(\overrightarrow{OC}-\overrightarrow{OA}\right)=\overrightarrow{OD}\LR\overrightarrow{OD}=\frac{\overrightarrow{OA}+\overrightarrow{OC}}{2}.
+\]
+Тогда
+\[
+\overrightarrow{BD}=(2-2;1{,}5-3;0-1)=(0;-1{,}5;-1)
+\]
+и
+\[
+BD=\sqrt{0^2+(-1{,}5)^2+(-1)^2}=\frac{\sqrt{13}}{2}.
+\]
+Косинус угла между векторами $\overrightarrow{BD}$ и $\overrightarrow{AC}$ равен
+\begin{multline*}
+\cos\alpha=\frac{\left(\overrightarrow{BD},\overrightarrow{AC}\right)}{BD\cdot AC}=-\frac{\left(\overrightarrow{BD},\overrightarrow{CA}\right)}{BD\cdot CA}= \\
+=-\cfrac{0\cdot(-2)+(-1)\cdot(-1{,}5)+(-1)\cdot(-2)}{\cfrac{\sqrt{13}}{2}\cdot3}=-\frac{7\sqrt{13}}{39}.
+\end{multline*}
+Заметим, что в общем случае
+\[
+0\leq\alpha\leq\pi.
+\]
+При этом, если $\cos\alpha<0$, то
+\[
+\alpha>\frac{\pi}{2}.
+\]
+В таком случае, острый угол между медианой $BD$ и стороной $AC$ равен
+\[
+\beta=\pi-\alpha=\pi-\arccos-\frac{7\sqrt{13}}{39}=\pi-\left(\pi-\arccos\frac{7\sqrt{13}}{39}\right)=\arccos\frac{7\sqrt{13}}{39}.
+\]
