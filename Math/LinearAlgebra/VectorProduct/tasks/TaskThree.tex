@@ -1,0 +1,21 @@
+\subsection{3.3.20}
+
+Вершины треугольника $ABC$ имеют следующие координаты:
+\[
+A(1;-2;3),\quad B(0;-1;2),\quad C(3;4;5).
+\]
+Построим векторы $\overrightarrow{AB}$ и $\overrightarrow{AC}$:
+\begin{gather*}
+\overrightarrow{AB}=\bigl(0-1;-1-(-2);2-3\bigr)=(-1;1;-1), \\
+\overrightarrow{AC}=\bigl(3-1;4-(-2);5-3\bigr)=(2;6;2).
+\end{gather*}
+Площадь параллелограмма, построенного на этих векторах и численно равная модулю их векторного произведения, будет вдвое превышать площадь $S$ треугольника~$ABC$. Так,
+\[
+S=\frac{1}{2}\cdot\biggl|\left[\overrightarrow{AB},\overrightarrow{AC}\right]\biggr|=\frac{1}{2}\cdot\left|\det
+\begin{pNiceMatrix}
+	\vec i & \vec j & \vec k \\
+	-1 & 1 & -1 \\
+	2 & 6 & 2
+\end{pNiceMatrix}
+\right|=\frac{1}{2}\cdot\left|8\vec i-8\vec k\right|=\frac{1}{2}\cdot\sqrt{8^2+(-8)^2}=4\sqrt{2}.
+\]
