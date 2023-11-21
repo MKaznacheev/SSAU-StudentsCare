@@ -1,0 +1,157 @@
+\section{Результаты измерений и обработка данных}
+
+
+\begin{table}[h]
+	\begin{center}
+	\begin{tabular}{|c|c|c|c|c|}
+		\hline
+		\parbox[c][7em]{3em}{Номер опыта} & \parbox{6em}{Нулевая точка весов $n_{0i}$} & \parbox{5em}{Полоса застоя $\Delta n_i$} & \parbox{6em}{Положение равновесия $n_i$ при нагрузке в $10\;\text{мг}$} & \parbox{9em}{Чувствительность $\delta=\dfrac{|\bar n-\bar n_0|}{10}$, $\text{мг}^{-1}$} \\
+		\hline
+		\hline
+		1 & $+3{,}0$ & 0 & $-6{,}8$ & \multirow{7}{*}{$0{,}98$} \\
+		\cline{1-4}
+		2 & $+3{,}0$ & 0 & $-6{,}8$ & \\
+		\cline{1-4}
+		3 & $+3{,}0$ & 0 & $-6{,}8$ & \\
+		\cline{1-4}
+		4 & $+3{,}0$ & 0 & $-6{,}8$ & \\
+		\cline{1-4}
+		5 & $+3{,}0$ & 0 & $-6{,}8$ & \\
+		\cline{1-4}
+		& $\bar n_0$ & $\pm\Delta n_\text{max}$ & $\bar n$ & \\
+		\cline{2-4}
+		& $+3{,}0$ & 0 & $-6{,}8$ & \\
+		\hline
+	\end{tabular}
+	\caption{Нулевая точка и чувствительность ненагруженных весов}\label{TbOne}
+	\end{center}
+\end{table}
+
+\begin{table}[h]
+	\begin{center}
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		\parbox[c][7em]{3em}{Номер опыта} & \parbox{6em}{Нулевая точка предельно нагруженных весов $n'_{0i}$} & \parbox{6em}{Положение равновесия $n'_i$ при перегрузке в $10\;\text{мг}$} & \parbox{9em}{Чувствительность $\delta'=\dfrac{|\bar n'-\bar n'_0|}{10}$, $\text{мг}^{-1}$} \\
+		\hline
+		\hline
+		1 & $+2{,}1$ & $-7{,}4$ & \multirow{5}{*}{$0{,}95$} \\
+		\cline{1-3}
+		2 & $+2{,}1$ & $-7{,}4$ & \\
+		\cline{1-3}
+		3 & $+2{,}1$ & $-7{,}4$ & \\
+		\cline{1-3}
+		& $\bar n'_0$ & $\bar n'$ & \\
+		\cline{2-3}
+		& $+2{,}1$ & $-7{,}4$ & \\
+		\hline
+	\end{tabular}
+	\caption{Нулевая точка и чувствительность нагруженных весов}\label{TbTwo}
+	\end{center}
+\end{table}
+
+Воспользуемся следующими значениями плотностей дерева, алюминия и эбонита соотвественно:
+\[
+\rho_\text{д}=500\;\text{кг/м}^3,\quad\rho_\text{ал}=2700\;\text{кг/м}^3,\quad\rho_\text{эб}=1200\;\text{кг/м}^3.
+\]
+
+\begin{table}[h]
+	\begin{center}
+	\begin{tabular}{|c|c|c|c|c|}
+		\hline
+		\multicolumn{2}{|c|}{\multirow{2}{*}{Нагрузка $m_1$, г}} & Дерево & Алюминий & Эбонит \\
+		\cline{3-5}
+		\multicolumn{2}{|c|}{} & $95{,}470$ & $89{,}260$ & $89{,}990$ \\
+		\hline
+		\hline
+		\multirow{4}{*}{\parbox[c][4em]{9em}{Положение равновесия $n_{1i}$}} & 1 & $4{,}3$ & $3{,}9$ & $0{,}1$ \\
+		\cline{2-5}
+		& 2 & $4{,}1$ & $3{,}9$ & $0{,}1$ \\
+		\cline{2-5}
+		& 3 & $4{,}1$ & $3{,}9$ & $0{,}1$ \\
+		\cline{2-5}
+		& $\bar n_1$ & $4{,}2$ & $3{,}9$ & $0{,}1$ \\
+		\hline
+		\hline
+		\parbox[c][4em]{6em}{$\dfrac{\bar n_1-\bar n'_0}{\delta'}$, мг} & & $2{,}211$ & $1{,}895$ & $-2{,}105$ \\
+		\hline
+		Масса тела $m$, г & & $4{,}528$ & $10{,}738$ & $10{,}012$ \\
+		\hline
+		Истинная масса $m_0$, г & & $4{,}538$ & $10{,}741$ & $10{,}021$ \\
+		\hline
+	\end{tabular}
+	\caption{Определение масс тел методом Менделеева}\label{TbTwo}
+	\end{center}
+\end{table}
+
+Цена деления весов равна
+\[
+h=\frac{1}{\delta'}\approx1\;\text{мг}. 
+\]
+Тогда приборная ошибка составляет
+\[
+\Delta n_\text{пр}=\frac{c}{2}=0{,}5.
+\]
+Поскольку доверительная вероятность равна
+\[
+P=0{,}95,
+\]
+то ошибка округления составит
+\[
+\Delta n_\text{окр}=P\cdot\Delta n_\text{пр}=0{,}475.
+\]
+Случайная ошибка на протяжении почти всего опыта равна нулю. В таком случае, полная абсолютная погрешность измерения положения нулевой точки, а так же положения равновесия равна
+\[
+\Delta n=\sqrt{\Delta n_\text{пр}^2+\Delta n_\text{окр}^2}\approx0{,}690.
+\]
+Однако, при взвешивании дерева, случайная погрешность присутствовала. Средняя ошибка в этом случае равна
+\[
+S_{\bar n_1}=\sqrt{\frac{\displaystyle\sum_{i=1}^3(n_{1i}-\bar n_1)^2}{3(3-1)}}=\sqrt{\frac{\displaystyle\sum_{i=1}^3(n_{1i}-\bar n_1)^2}{6}}\approx0{,}071.
+\]
+Коэффициент Стьюдента в нашем случае оказывается равен
+\[
+t_P(3)=4{,}3,
+\]
+а случайная ошибка ---
+\[
+\Delta n_{1\text{случ}}=t_P(3)\cdot S_{\bar n_1}\approx0{,}305.
+\]
+Значит, полная погрешность измерений положения равновесия при взвешивании дерева равна
+\[
+\Delta n_{1\text{д}}=\sqrt{\Delta n_{1\text{случ}}^2+\Delta n^2}\approx0{,}754.
+\]
+
+Погрешность чувствительности определяется следующим образом:
+\[
+\Delta\delta=\sqrt{\left(\frac{\partial\delta}{\partial \bar n}\cdot\Delta n\right)^2+\left(\frac{\partial\delta}{\partial \bar n_0}\cdot\Delta n\right)^2}=\frac{\Delta n}{10}\sqrt{2\Sgn^2(\bar n-\bar n_0)}.
+\]
+Поскольку $\bar n-\bar n_0<0$, то $\Sgn(\bar n-\bar n_0)=-1$, а значит,
+\[
+\Delta\delta=\Delta n\cdot\frac{\sqrt{2}}{10}\approx0{,}098.
+\]
+Нетрудно заметить, что
+\[
+\Delta\delta'=\Delta\delta.
+\]
+
+Ошибка определения массы тела вычисляется, как
+\begin{multline*}
+\Delta m=\sqrt{\left(\frac{\partial m}{\partial\bar n_1}\cdot\Delta n_1\right)^2+\left(\frac{\partial m}{\partial\bar n'_0}\cdot\Delta n\right)^2+\left(\frac{\partial m}{\partial\delta'}\cdot\Delta\delta'\right)^2}= \\
+=\frac{1}{\delta'}\sqrt{\Delta n_1^2+\Delta n^2+\left(\frac{\bar n_1-\bar n'_0}{\delta'}\cdot\Delta\delta'\right)^2}
+\end{multline*}
+в случае дерева и, как
+\[
+\Delta m=\frac{1}{\delta'}\sqrt{2\Delta n^2+\left(\frac{\bar n_1-\bar n'_0}{\delta'}\cdot\Delta\delta'\right)^2}
+\]
+в случае алюминия и эбонита. Так,
+\[
+\Delta m_\text{д}\approx\Delta m_\text{ал}\approx\Delta m_\text{эб}\approx0{,}001\;\text{г}.
+\]
+
+Ошибка определения истинной массы тела вычисляется по формуле
+\[
+\Delta m_0=\sqrt{\left(\frac{\partial m_0}{\partial m}\cdot\Delta m\right)^2}=\left(0{,}999856+\frac{0{,}0012}{\rho}\right)\cdot\Delta m.
+\]
+Так,
+\[
+\Delta m_{0\text{д}}\approx\Delta m_{0\text{ал}}\approx\Delta m_{0\text{эб}}\approx0{,}001\;\text{г}.
+\]
