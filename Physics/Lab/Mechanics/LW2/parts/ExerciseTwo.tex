@@ -1,0 +1,145 @@
+\subsection{Определение объема трубки и плотности ее материала при помощи штангенциркуля}
+
+Измерим характеристики трубки, такие, как длина $L$, внутренний диаметр $d$ и внешний диаметр $D$. Результаты запишем в таблицу~\ref{TabTwo}. Средние значения величин $L$, $D$, $d$ вычисляются по следующим формулам:
+\[
+\overline L=\frac{\sum\limits_{i=1}^5L_i}{5},\quad\overline D=\frac{\sum\limits_{i=1}^5D_i}{5},\quad\overline d=\frac{\sum\limits_{i=1}^5d_i}{5}.
+\]
+Соответствующие расхождения со средними величинами --- по формулам
+\[
+\Delta L_i=L_i-\overline L,\quad\Delta D_i=D_i-\overline D,\quad\Delta d_i=d_i-\overline d.
+\]
+
+\begin{table}[h]
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+			\hline
+			\parbox[c][3em]{3em}{Номер опыта} & \parbox[c][3em]{1.3em}{$L_i$, мм} & \parbox[c][3em]{2.1em}{$\Delta L_i$, мм} & \parbox[c][3em]{3.5em}{$(\Delta L_i)^2$, мм$^2$} & \parbox[c][3em]{1.4em}{$D_i$, мм} & \parbox[c][3em]{2.2em}{$\Delta D_i$, мм} & \parbox[c][3em]{3.5em}{$(\Delta D_i)^2$, мм$^2$} & \parbox[c][3em]{1.3em}{$d_i$, мм} & \parbox[c][3em]{1.9em}{$\Delta d_i$, мм} & \parbox[c][3em]{3.1em}{$(\Delta d_i)^2$, мм$^2$} \\
+			\hline
+			1 & 24{,}4 & $-0{,}1$ & 0{,}01 & 31{,}3 & 0{,}2 & 0{,}04 & 17{,}9 & $-0{,}1$ &0{,}01 \\
+			\hline
+			2 & 24{,}5 & 0 & 0 & 31{,}1 & 0 & 0 & 18{,}0 & 0 & 0 \\
+			\hline
+			3 & 24{,}4 & $-0{,}1$ & 0{,}01 & 31{,}1 & 0 & 0 & 18{,}0 & 0 & 0 \\
+			\hline
+			4 & 24{,}5 & 0 & 0 & 31{,}1 & 0 & 0 & 18{,}0 & 0 & 0 \\
+			\hline
+			5 & 24{,}5 & 0 & 0 & 31{,}1 & 0 & 0 & 18{,}0 & 0 & 0 \\
+			\hline
+			& \parbox[c][3em]{1.3em}{$\overline L$, мм} & & \parbox[c][4em]{4.4em}{$\sum\limits_{i=1}^5(\Delta L_i)^2$, мм$^2$} & \parbox[c][3em]{1.3em}{$\overline D$, мм} & & \parbox[c][4em]{4.6em}{$\sum\limits_{i=1}^5(\Delta D_i)^2$, мм$^2$} & \parbox[c][3em]{1.3em}{$\overline d$, мм} & & \parbox[c][4em]{4.3em}{$\sum\limits_{i=1}^5(\Delta d_i)^2$, мм} \\
+			\cline{2-2}\cline{4-5}\cline{7-8}\cline{10-10}
+			& 24{,}5 & & 0{,}02 & 31{,}1 & & 0{,}04 & 18{,}0 & & 0{,}01 \\
+			\hline
+		\end{tabular}
+	\caption{Размеры трубки}\label{TabTwo}
+	\end{center}
+\end{table}
+
+Вычислим погрешности измеренных величин. При пяти измерениях ($n=5$), коэффициент Стьюдента равен
+\[
+t_P(n)=2{,}78
+\]
+(доверительную вероятность всё так же считаем равной 95\%). Систематическая погрешность $\Delta l_\text{сист}$ для длины, внутреннего и внешнего диаметров едина:
+\[
+\Delta l_\text{пр}=\frac{0{,}1}{2}=0{,}05\;\text{мм}
+\]
+(приборная погрешность равна половине точности штангенциркуля),
+\[
+\Delta l_\text{окр}=P\cdot\Delta l_\text{пр}\approx0{,}05\;\text{мм},
+\]
+а значит,
+\[
+\Delta l_\text{сист}=\sqrt{(\Delta l_\text{пр})^2+(\Delta l_\text{окр})^2}\approx0{,}07\;\text{мм}.
+\]
+
+Вычислим средние ошибки интересующих нас величин:
+\begin{gather*}
+S_{\overline L}=\sqrt{\frac{\sum\limits_{i=1}^5(\Delta L_i)^2}{n(n-1)}}\approx0{,}03\;\text{мм},\quad S_{\overline D}=\sqrt{\frac{\sum\limits_{i=1}^5(\Delta D_i)^2}{n(n-1)}}\approx0{,}04\;\text{мм}, \\
+S_{\bar d}=\sqrt{\frac{\sum\limits_{i=1}^5(\Delta d_i)^2}{n(n-1)}}\approx0{,}02\;\text{мм},
+\end{gather*}
+и их случайные ошибки:
+\begin{gather*}
+\Delta L_\text{случ}=t_p(n)\cdot S_{\overline L}\approx0{,}08\;\text{мм},\quad\Delta D_\text{случ}=t_p(n)\cdot S_{\overline D}\approx0{,}11\;\text{мм}, \\
+\Delta d_\text{случ}=t_p(n)\cdot S_{\overline d}\approx0{,}06\;\text{мм}.
+\end{gather*}
+
+Полные ошибки равны
+\begin{gather*}
+\Delta L=\sqrt{(\Delta L_\text{случ})^2+(\Delta l_\text{сист})^2}\approx0{,}11\;\text{мм},\quad\Delta D=\sqrt{(\Delta D_\text{случ})^2+(\Delta l_\text{сист})^2}\approx0{,}13\;\text{мм}, \\
+\Delta d=\sqrt{(\Delta d_\text{случ})^2+(\Delta l_\text{сист})^2}\approx0{,}09\;\text{мм}.
+\end{gather*}
+Наконец, вычислим относительные погрешности по формулам
+\begin{gather*}
+\varepsilon_L=\frac{\Delta L}{\overline L}\cdot100\%\approx0{,}45\%,\quad\varepsilon_D=\frac{\Delta D}{\overline D}\cdot100\%\approx0{,}42\%, \\
+\varepsilon_d=\frac{\Delta d}{\overline d}\cdot100\%=0{,}5\%
+\end{gather*}
+и запишем данные в таблицу~\ref{TabThree}.
+
+\begin{table}[h]
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|c|c|}
+		\hline
+		 \parbox[c][1.7em]{5em}{$\overline L\pm\Delta L$, см} & $\varepsilon_L$, \% & $\overline D\pm\Delta D$, см & $\varepsilon_D$, \% & $\overline d\pm\Delta d$, см & $\varepsilon_d$, \% \\
+		\hline
+		$2{,}450\pm0{,}011$ & 0{,}45 & $3{,}110\pm0{,}013$ & 0{,}42 & $1{,}800\pm0{,}009$ & 0{,}50 \\
+		\hline
+		\end{tabular}
+	\caption{Размеры трубки}\label{TabThree}
+	\end{center}
+\end{table}
+
+Объём трубки вычислим по формуле
+\[
+V=\frac{\pi\overline L}{4}\left(\overline D^2-\overline d^2\right),
+\]
+а относительную погрешность определения объёма --- по формуле
+\[
+\varepsilon_V=\sqrt{\left(\frac{\Delta\pi}{\pi}\right)^2+\left(\frac{\Delta L}{\overline L}\right)^2+\left(\frac{2\overline D\cdot\Delta D}{\overline D^2-\overline d^2}\right)^2+\left(\frac{2\overline d\cdot\Delta d}{\overline D^2-\overline d^2}\right)^2}\cdot100\%,
+\]
+где $\Delta\pi$ --- абсолютная ошибка округления числа $\pi$. Поскольку расчёты производятся на калькуляторе, располагающем достаточно точным значением числа $\pi$, ошибку его округления можно принять равной нулю ($\Delta\pi=0$). Тогда
+\[
+\varepsilon_V=\sqrt{\left(\frac{\Delta L}{\overline L}\right)^2+\left(\frac{2\overline D\cdot\Delta D}{\overline D^2-\overline d^2}\right)^2+\left(\frac{2\overline d\cdot\Delta d}{\overline D^2-\overline d^2}\right)^2}\cdot100\%.
+\]
+Абсолютную погрешность объёма найдём, как
+\[
+\Delta V=\frac{\varepsilon_V\cdot V}{100}.
+\]
+
+Затем, взвесив трубку, вычислим плотность её вещества по формуле
+\[
+\rho=\frac{m}{V}.
+\]
+Относительна погрешность при этом составит
+\[
+\varepsilon_\rho=\sqrt{\varepsilon_m^2+\varepsilon_V^2},
+\]
+а абсолютная ---
+\[
+\Delta\rho=\frac{\varepsilon_\rho\cdot\rho}{100}.
+\]
+Заметим, что приборная погрешность электронных весов равна цене деления. Тогда
+\[
+\Delta m=\sqrt{(\Delta m_\text{пр})^2+(\Delta m_\text{окр})^2}=\sqrt{(\Delta m_\text{пр})^2+\left(P\cdot\frac{\Delta m_\text{пр}}{2}\right)^2}=\Delta m_\text{пр}\sqrt{1+\frac{P^2}{4}}.
+\]
+Результаты занесём в таблицу~\ref{TabFour}.
+
+\begin{table}[h!]
+	\begin{center}
+	\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+		\hline
+		\parbox[c][3em]{1.5em}{$V$, см$^3$} & \parbox[c][3em]{1.5em}{$\varepsilon_V$, \%} & \parbox[c][3em]{2em}{$\Delta V$, см$^3$} & \parbox[c][3em]{1.5em}{$m$, г} & \parbox[c][3em]{2em}{$\Delta m$, г} & \parbox[c][3em]{1.5em}{$\varepsilon_m$, \%} & \parbox[c][3em]{2.5em}{$\rho$, г/см$^3$} & \parbox[c][3em]{1.5em}{$\varepsilon_\rho$, \%} & \parbox[c][3em]{2.5em}{$\Delta\rho$, г/см$^3$} \\
+		\hline
+		12{,}38 & 1{,}43 & 0{,}18 & 97{,}44 & 0{,}01 & 0{,}01 & 7{,}87 & 1{,}43 & 0{,}11 \\
+		\hline
+	\end{tabular}
+	\caption{Определение объема и плотности трубки}\label{TabFour}
+	\end{center}
+\end{table}
+
+Как видно из последней таблицы (таб.~\ref{TabFour}),
+\[
+V\pm\Delta V=12{,}38\pm0{,}18\;\text{см}^3
+\]
+и
+\[
+\rho\pm\Delta\rho=7{,}87\pm0{,}11\;\text{г/см}^3.
+\]
