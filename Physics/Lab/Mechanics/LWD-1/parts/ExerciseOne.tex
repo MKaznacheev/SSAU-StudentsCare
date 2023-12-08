@@ -1,0 +1,240 @@
+\section{Результаты измерений и обработка данных}
+
+Определим время $N=10$ полных колебаний платформы, сообщая ей вращательный импульс. Измерения повторим 6 раз и вычислим период колебаний ненагруженной платформы по формуле
+\[
+T=\frac{\langle t\rangle}{N},
+\]
+где $\langle t\rangle$ --- среднее время $N$ колебаний. Результаты (эти и дальнейшие) занесём в таблицу~\ref{TbOne}.
+
+В используемой нами установке радиус нижней платформы составляет
+\[
+R=78{,}05\pm0{,}05\;\text{мм},
+\]
+а верхней ---
+\[
+r=28{,}85\pm0{,}05\;\text{мм}.
+\]
+Масса нижней платформы равна
+\[
+m_\text{пл}=51{,}6\pm0{,}01\;\text{г}.
+\]
+Нити, которыми нижняя платформа крепится к верхней, имеют длину
+\[
+l=70{,}0\pm0{,}2\;\text{см}.
+\]
+При данных значениях величин формула принимает вид
+\[
+I=0{,}000799\cdot mT^2.
+\]
+
+Вычислим момент инерции платформы $I_\text{пл}$ по формуле~\eqref{eq:4}:
+\[
+I_\text{пл}=0{,}000799\cdot m_\text{пл}T_\text{пл}^2\approx1{,}70\cdot10^{-4}\;\text{кг$\cdot$м$^2$}.
+\]
+
+Далее последовательно повторим тоже самое для платформы с конусом, кольцом и цилиндром (по отдельности), учитывая, что
+\[
+m_\text{кон}=475{,}80\pm0{,}02\;\text{г},\quad m_\text{к}=314{,}00\pm0{,}02\;\text{г},\quad m_\text{ц}=532{,}77\pm0{,}02\;\text{г}.
+\]
+Так,
+\begin{gather*}
+I_\text{С, кон}=0{,}000799\cdot(m_\text{пл}+m_\text{кон})T_\text{кон}^2\approx4{,}05\cdot10^{-4}\;\text{кг$\cdot$м$^2$}, \\
+I_\text{С, к}=0{,}000799\cdot(m_\text{пл}+m_\text{к})T_\text{к}^2\approx8{,}95\cdot10^{-4}\;\text{кг$\cdot$м$^2$}, \\
+I_\text{С, ц}=0{,}000799\cdot(m_\text{пл}+m_\text{ц})T_\text{ц}^2\approx3{,}37\cdot10^{-4}\;\text{кг$\cdot$м$^2$},
+\end{gather*}
+где через $I_\text{С, кон}$ обозначен момент инерции системы "трифилярный подвес $+$ конус"\ и так далее.
+
+Теперь найдём экспериментальные значения моментов инерции тел в отдельности от подвеса:
+\begin{gather*}
+I_\text{кон}=I_\text{С, кон}-I_\text{пл}=2{,}35\cdot10^{-4}\;\text{кг$\cdot$м$^2$}, \\
+I_\text{к}=I_\text{С, к}-I_\text{пл}=7{,}25\cdot10^{-4}\;\text{кг$\cdot$м$^2$}, \\
+I_\text{ц}=I_\text{С, ц}-I_\text{пл}=1{,}67\cdot10^{-4}\;\text{кг$\cdot$м$^2$}.
+\end{gather*}
+
+\begin{table}
+	\begin{center}
+	\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+		\hline
+		Тело & \parbox[c][3.5em]{3em}{Номер опыта} & $t_i$, с & $\Delta t$, с & $T$, с & $\Delta T$, с & $\varepsilon_T$, \% & \parbox[c]{2.6em}{$I$, кг$\cdot$м$^2\cdot$ $\cdot10^{-4}$} & \parbox[c]{2.6em}{$\Delta I$, кг$\cdot$м$^2\cdot$ $\cdot10^{-4}$} & $\varepsilon_I$, \%\\
+		\hline
+		\hline
+		\multirow{7}{*}{\parbox[c]{4.1em}{Пустая платформа}} & 1 & $20{,}20$ & \multirow{7}{*}{$0{,}05$} & \multirow{7}{*}{$2{,}03$} & \multirow{7}{*}{$0{,}01$} & \multirow{7}{*}{$0{,}49$} & \multirow{7}{*}{$1{,}70$} & \multirow{7}{*}{$0{,}02$} & \multirow{7}{*}{$1{,}04$} \\
+		\cline{2-3}
+		& 2 & $20{,}36$ & & & & & & & \\
+		\cline{2-3}
+		& 3 & $20{,}23$ & & & & & & & \\
+		\cline{2-3}
+		& 4 & $20{,}28$ & & & & & & & \\
+		\cline{2-3}
+		& 5 & $20{,}25$ & & & & & & & \\
+		\cline{2-3}
+		& 6 & $20{,}32$ & & & & & & & \\
+		\cline{2-3}
+		& $\langle t\rangle$ & $20{,}27$ & & & & & & & \\
+		\hline
+		\hline
+		\multirow{7}{*}{\parbox[c]{4em}{Конус}} & 1 & $9{,}83$ & \multirow{7}{*}{$0{,}08$} & \multirow{7}{*}{$0{,}98$} & \multirow{7}{*}{$0{,}01$} & \multirow{7}{*}{$1{,}02$} & \multirow{7}{*}{$2{,}35$} & \multirow{7}{*}{$0{,}08$} & \multirow{7}{*}{$3{,}40$} \\
+		\cline{2-3}
+		& 2 & $9{,}67$ & & & & & & & \\
+		\cline{2-3}
+		& 3 & $9{,}72$ & & & & & & & \\
+		\cline{2-3}
+		& 4 & $9{,}73$ & & & & & & & \\
+		\cline{2-3}
+		& 5 & $9{,}84$ & & & & & & & \\
+		\cline{2-3}
+		& 6 & $9{,}73$ & & & & & & & \\
+		\cline{2-3}
+		& $\langle t\rangle$ & $9{,}75$ & & & & & & & \\
+		\hline
+		\hline
+		\multirow{7}{*}{\parbox[c]{4em}{Кольцо}} & 1 & $17{,}50$ & \multirow{7}{*}{$0{,}10$} & \multirow{7}{*}{$1{,}75$} & \multirow{7}{*}{$0{,}01$} & \multirow{7}{*}{$0{,}57$} & \multirow{7}{*}{$7{,}25$} & \multirow{7}{*}{$0{,}11$} & \multirow{7}{*}{$1{,}51$} \\
+		\cline{2-3}
+		& 2 & $17{,}55$ & & & & & & & \\
+		\cline{2-3}
+		& 3 & $17{,}50$ & & & & & & & \\
+		\cline{2-3}
+		& 4 & $17{,}59$ & & & & & & & \\
+		\cline{2-3}
+		& 5 & $17{,}67$ & & & & & & & \\
+		\cline{2-3}
+		& 6 & $17{,}38$ & & & & & & & \\
+		\cline{2-3}
+		& $\langle t\rangle$ & $17{,}53$ & & & & & & & \\
+		\hline
+		\hline
+		\multirow{7}{*}{\parbox[c]{4.1em}{Цилиндр}} & 1 & $8{,}45$ & \multirow{7}{*}{$0{,}10$} & \multirow{7}{*}{$0{,}85$} & \multirow{7}{*}{$0{,}01$} & \multirow{7}{*}{$1{,}18$} & \multirow{7}{*}{$1{,}67$} & \multirow{7}{*}{$0{,}08$} & \multirow{7}{*}{$4{,}79$} \\
+		\cline{2-3}
+		& 2 & $8{,}36$ & & & & & & & \\
+		\cline{2-3}
+		& 3 & $8{,}39$ & & & & & & & \\
+		\cline{2-3}
+		& 4 & $8{,}54$ & & & & & & & \\
+		\cline{2-3}
+		& 5 & $8{,}57$ & & & & & & & \\
+		\cline{2-3}
+		& 6 & $8{,}57$ & & & & & & & \\
+		\cline{2-3}
+		& $\langle t\rangle$ & $8{,}48$ & & & & & & & \\
+		\hline
+	\end{tabular}
+	\caption{Результаты измерений и вычислений}\label{TbOne}
+	\end{center}
+\end{table}
+
+Исследуемы тела обладают следующими размерами:
+\begin{gather*}
+D_\text{кон}=80{,}10\;\text{мм}, \\
+D_\text{к, внеш}=104{,}60\;\text{мм},\quad D_\text{к, внутр}=89{,}50\;\text{мм}, \\
+D_\text{ц}=50{,}00\;\text{мм}.
+\end{gather*}
+Иначе говоря,
+\begin{gather*}
+R_\text{кон}=40{,}05\;\text{мм}, \\
+R_\text{к}=52{,}30\;\text{мм},\quad r_\text{к}=44{,}75\;\text{мм}, \\
+R_\text{ц}=25{,}00\;\text{мм}.
+\end{gather*}
+
+Вычислим теперь теоретические значения моментов инерции:
+\begin{gather*}
+J_\text{кон}=\frac{3}{10}m_\text{кон}R_\text{кон}^2\approx2{,}29\cdot10^{-4}\;\text{кг$\cdot$м$^2$}, \\
+J_\text{к}=\frac{1}{2}m_\text{к}\left(R_\text{к}^2+r_\text{к}^2\right)\approx7{,}44\cdot10^{-4}\;\text{кг$\cdot$м$^2$}, \\
+J_\text{ц}=\frac{1}{2}m_\text{ц}R_\text{ц}^2\approx1{,}66\cdot10^{-4}\;\text{кг$\cdot$м$^2$}.
+\end{gather*}
+
+Перейдём к вычислению погрешностей. Доверительную вероятность примем равной $P=95\%$. Тогда коэффициент Стьюдента для $n=6$ измерений оказывается равным
+\[
+t_P(n)=2{,}57.
+\]
+
+Для измерения времени систематическая погрешность высчитывается следующим образом:
+\begin{gather*}
+\Delta t_\text{пр}=0{,}01\;\text{с},\quad\Delta t_\text{окр}=P\cdot\frac{\Delta t_\text{пр}}{2}\approx0{,}005\;\text{с}, \\
+\Delta t_\text{сист}=\sqrt{(\Delta t_\text{пр})^2+(\Delta t_\text{окр})^2}\approx0{,}01\;\text{с}.
+\end{gather*}
+Средние ошибки измерений времени вычисляются по формуле
+\[
+S=\sqrt{\frac{\sum\limits_{i=1}^n\bigl(t_i-\langle t\rangle\bigr)^2}{n(n-1)}}.
+\]
+Так,
+\[
+S_\text{пл}\approx0{,}02\;\text{с},\quad S_\text{кон}\approx0{,}03\;\text{с},\quad S_\text{к}\approx S_\text{ц}\approx0{,}04\;\text{с}.
+\]
+Случайные ошибки вычислим по формуле
+\[
+\Delta t_\text{случ}=t_P(n)\cdot S.
+\]
+Так,
+\[
+\Delta t_\text{случ, пл}\approx0{,}05\;\text{с},\quad\Delta t_\text{случ, кон}\approx0{,}08\;\text{с},\quad\Delta t_\text{случ, к}\approx\Delta t_\text{случ, ц}\approx0{,}10\;\text{с}.
+\]
+Наконец, по формуле
+\[
+\Delta t=\sqrt{(\Delta t_\text{случ})^2+(\Delta t_\text{сист})^2}
+\]
+вычислим абсолютные полные погрешности и запишем результаты в таблицу~\ref{TbOne}.
+
+Величины диаметров (а равно --- радиусов) тел измерены единожды штангенцирклуем с точностью $0{,}1\;\text{мм}$, а значит имеет место только систематическая погрешность:
+\begin{gather*}
+\Delta D_\text{пр}=\frac{0{,}1}{2}=0{,}05\;\text{мм},\quad\Delta D_\text{окр}=P\cdot\Delta D_\text{пр}\approx0{,}05\;\text{мм}, \\
+\Delta D=\Delta D_\text{сист}=\sqrt{(\Delta D_\text{пр})^2+(\Delta D_\text{окр})^2}\approx0{,}07\;\text{мм}.
+\end{gather*}
+
+Значения периодов получены в результате косвенных измерений, а значит полная абсолютная погрешность вычисляется по формуле
+\[
+\Delta T=\sqrt{\left(\frac{\partial T}{\partial\langle t\rangle}\,\Delta t\right)^2}=\left|\frac{dT}{d\langle t\rangle}\,\Delta t\right|=\frac{\Delta t}{N},
+\]
+а относительная --- по формуле
+\[
+\varepsilon_T=\frac{\Delta T}{T}\cdot100\%.
+\]
+
+Найдём погрешность нахождения момента инерции платформы:
+\[
+\Delta I=\sqrt{\left(\frac{\partial I}{\partial m}\,\Delta m\right)^2+\left(\frac{\partial I}{\partial R}\,\Delta R\right)^2+\left(\frac{\partial I}{\partial r}\,\Delta r\right)^2+\left(\frac{\partial I}{\partial l}\,\Delta l\right)^2+\left(\frac{\partial I}{\partial T}\,\Delta T\right)^2}.
+\]
+В результате имеем
+\begin{multline*}
+\Delta I=\frac{g}{4\pi^2l}T^2\cdot \\
+\cdot\sqrt{\left(Rr\,\Delta m\right)^2+\left(mr\,\Delta R\right)^2+\left(mR\,\Delta r\right)^2+\left(\frac{mRr}{l}\,\Delta l\right)^2+\left(\frac{2mRr}{T}\,\Delta T\right)^2}.
+\end{multline*}
+Разделим полученное на $I$ и умножим на $100\%$:
+\[
+\varepsilon_I=\frac{\Delta I}{I}\cdot100\%=\sqrt{\varepsilon_m^2+\varepsilon_R^2+\varepsilon_r^2+\varepsilon_l^2+4\varepsilon^2_T}.
+\]
+По той же формуле вычисляется относительная погрешность измерения момента инерции системы "платформа $+$ тело"{}, где
+\[
+\varepsilon_m=\frac{0{,}002}{m},\;\%;\quad\varepsilon_R=0{,}06\%;\quad\varepsilon_r=0{,}17\%;\quad\varepsilon_l=0{,}29\%;\quad\varepsilon_T=\frac{1}{T},\;\%. 
+\]
+Иначе говоря,
+\[
+\varepsilon_{I_\text{С}}=\sqrt{\frac{4\cdot10^{-6}}{m^2}+\frac{4}{T^2}+0{,}1166}.
+\]
+Но в случае пустой платформы
+\[
+\varepsilon_m=\frac{0{,}001}{m},\;\%
+\]
+и
+\[
+\varepsilon_{I}=\sqrt{\frac{10^{-6}}{m^2}+\frac{4}{T^2}+0{,}1166}.
+\]
+При этом,
+\[
+\Delta I_\text{С}=\varepsilon_{I_\text{С}}\cdot I_\text{С}\cdot10^{-2},
+\]
+как и для пустой платформы. 
+
+Для систем имеем следующие значения:
+\begin{gather*}
+\varepsilon_{I_\text{С, кон}}\approx2{,}07\%,\quad\Delta I_\text{С, кон}\approx0{,}08\cdot10^{-4}\;\text{кг$\cdot$м$^2$}; \\
+\varepsilon_{I_\text{С, к}}\approx1{,}19\%,\quad\Delta I_\text{С, к}\approx0{,}11\cdot10^{-4}\;\text{кг$\cdot$м$^2$}; \\
+\varepsilon_{I_\text{С, ц}}\approx2{,}38\%,\quad\Delta I_\text{С, ц}\approx0{,}08\cdot10^{-4}\;\text{кг$\cdot$м$^2$}.
+\end{gather*}
+Однако, нас больше интересуют погрешности для тел в отдельности от платформы:
+\[
+\Delta I=\sqrt{(\Delta I_\text{С})^2+(\Delta I_\text{пл})^2}
+\]
+и
+\[
+\varepsilon_I=\frac{\Delta I}{I}\cdot 100\%.
+\]
