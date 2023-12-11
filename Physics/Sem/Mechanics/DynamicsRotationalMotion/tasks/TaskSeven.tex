@@ -1,0 +1,52 @@
+\subsection{12}
+
+Масса тонкого стержня длины $l=1\;\text{м}$ равна $m=1\;\text{кг}$. Ось вращения проходит через нижнюю точку стержня перпендикулярно плоскости, в которой происходит его движение. В некоторый момент времени стержень составляет с вертикалью угол $\beta=60^\circ$. Момент инерции некоторого элемента стержня равен
+\[
+dI=r^2\,dm.
+\]
+Ввиду однородности стержня,
+\[
+\frac{dm}{dr}=\frac{m}{l}\LR dm=\frac{m}{l}\,dr
+\]
+и
+\[
+dI=\frac{mr^2}{l}\,dr\LR I=\frac{m}{l}\int\limits_0^l r^2\,dr=\frac{ml^2}{3}
+\]
+Тогда момент импульса всего стержня равен
+\[
+L=\frac{ml^2}{3}\omega.
+\]
+
+При этом
+\[
+M=\dot L=I\varepsilon
+\]
+с одной стороны и
+\[
+M=\bigl|[\vec R_C, m\vec g]\bigr|=\frac{mgl}{2}\sin\varphi
+\]
+--- с другой, где $\varphi$ --- угол между стержнем и вертикалью. Тогда
+\[
+\frac{mgl}{2}\sin\varphi=I\varepsilon\LR\varepsilon=\frac{mgl}{2I}\sin\varphi=\frac{3g}{2l}\sin\varphi.
+\]
+При этом,
+\[
+\varepsilon=\frac{d\omega}{dt}=\frac{\omega\,d\omega}{d\varphi}.
+\]
+Тогда
+\[
+\omega\,d\omega=\frac{3g}{2l}\sin\varphi\,d\varphi\LR\omega^2=C-\frac{3g}{l}\cos\varphi.
+\]
+Поскольку $\omega^2(0)=0$, то
+\[
+C=\frac{3g}{l}
+\]
+и
+\[
+\omega=\sqrt{\frac{3g}{l}(1-\cos\varphi)}.
+\]
+
+Наконец,
+\[
+L=\frac{ml^2}{3}\sqrt{\frac{3g}{l}(1-\cos\varphi)}=m\sqrt{\frac{gl^3}{3}(1-\cos\varphi)}=1{,}28\;\text{кг$\cdot$м$^2$/с}.
+\]
