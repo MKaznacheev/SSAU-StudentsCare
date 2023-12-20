@@ -1,0 +1,55 @@
+\subsection{Определение плотности твердого тела гидростатическим взвешиванием}
+Определим массу $m$ взвешиваемого тела в воздухе. Затем определим его массу $m_1$ вместе с проволокой. Затем опустим тело на проволоке  в воду и снова измерим его массу $m_2$. Результаты занесём в таблицу~\eqref{TbThree}.
+
+\begin{table}[h!]
+	\begin{center}
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		$m$, г & $m_1$, г & $m_2$, г & $W=m_1-m_2$, г \\
+		\hline
+		$28{,}810$ & $28{,}890$ & $17{,}510$ & $11{,}380$ \\
+		\hline
+	\end{tabular}
+	\caption{Результаты измерения массы}\label{TbThree}
+	\end{center}
+\end{table}
+
+По формуле~\eqref{eq:2} вычислим плотность тела:
+\[
+\rho\approx2{,}5230\;\text{г/см}^3.
+\]
+Абсолютная ошибка измерения плотности вычисляется, как
+\[
+\begin{split}
+	\Delta\rho & =\sqrt{\left(\frac{\partial\rho}{\partial m}\,\Delta m\right)^2+\left(\frac{\partial\rho}{\partial m_1}\,\Delta m_1\right)^2+\left(\frac{\partial\rho}{\partial m_2}\,\Delta m_2\right)^2}= \\
+	& =\Delta m\sqrt{\left(\frac{\partial\rho}{\partial m}\right)^2+\left(\frac{\partial\rho}{\partial m_1}\right)^2+\left(\frac{\partial\rho}{\partial m_2}\right)^2},
+\end{split}
+\]
+поскольку $\Delta m_1=\Delta m_2=\Delta m$. При этом,
+\begin{gather*}
+\frac{\partial\rho}{\partial m}=\frac{1}{m_1-m_2}(\delta-\lambda), \\
+\frac{\partial\rho}{\partial m_1}=-\frac{m}{(m_1-m_2)^2}(\delta-\lambda), \\
+\frac{\partial\rho}{\partial m_2}=\frac{m}{(m_1-m_2)^2}(\delta-\lambda),
+\end{gather*}
+а значит,
+\[
+\Delta\rho=\frac{\sqrt{W^2+2m^2}}{W^2}(\delta-\lambda)\,\Delta m\approx0{,}0023\;\text{г/см}^3
+\]
+и
+\[
+\varepsilon_\rho=\frac{\Delta\rho}{\rho}\cdot100\%\approx0{,}09\%.
+\]
+Результаты запишем в таблицу~\ref{TbFour}.
+
+\begin{table}[h!]
+	\begin{center}
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		$\rho$, г/см$^3$ & $\Delta\rho$, г/см$^3$ & $\varepsilon_\rho$, \% & $\rho\pm\Delta\rho$, г/см$^3$ \\
+		\hline
+		$2{,}5230$ & $0{,}0023$ & $0{,}09$ & $2{,}5230\pm0{,}0023$ \\
+		\hline
+	\end{tabular}
+	\caption{Результаты вычисления плотности}\label{TbFour}
+	\end{center}
+\end{table}

@@ -1,0 +1,71 @@
+\section{Результаты измерений и обработка данных}
+
+\subsection{Определение плотности твердого тела при помощи пикнометра}
+Определим взвешиванием массу $m$ некоторого числа кусочков твёрдого тела и массу $M$ пикнометра с водой, налитой в него до определённой метки. Затем кусочки твёрдого тела поместим в пикнометр и уберём излишек воды, так, чтобы её уровень совпадал с уровнем воды в пикнометре без кусочков. Избавимся от пузырьков воздуха и измерим массу $M_0$ получившейся системы. Результаты запишем в таблицу~\eqref{TbOne}.
+
+\begin{table}[h!]
+	\begin{center}
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		$m$, г & $M$, г & $M_0$, г & $m+M-M_0$, г \\
+		\hline
+		$33{,}640$ & $131{,}650$ & $162{,}170$ & $3{,}120$ \\
+		\hline
+	\end{tabular}
+	\caption{Результаты измерения массы}\label{TbOne}
+	\end{center}
+\end{table}
+
+Опыт проводится при температуре $24\;^\circ\text{С}$, а значит плотность воды принимается равной
+\[
+\delta=0{,}99732\;\text{г/см}^3.
+\]
+Плотность воздуха составляет
+\[
+\lambda=0{,}0012\;\text{г/см}^3.
+\]
+Определим плотность вещества кусочков по формуле~\eqref{eq:1} и запишем результат в таблицу~\ref{TbTwo}:
+\[
+\rho\approx10{,}7414\;\text{г/см}^3.
+\]
+
+Вычислим ошибки измерений. Доверительную вероятность примем равной $P=95\%$. Для измерения масс имеет место только систематическая погрешность. При этом приборная погрешность равна половине массы самого маленького разновеска из тех, что используются для уравновешивания весов:
+\begin{gather*}
+\Delta m_\text{пр}=\frac{10^{-2}}{2}=0{,}005\;\text{г},\quad\Delta m_\text{окр}=P\cdot\Delta m_\text{пр}\approx\Delta m_\text{пр}=0{,}005\;\text{г}, \\
+\Delta m=\Delta m_\text{сист}=\sqrt{(\Delta m_\text{пр})^2+(\Delta m_\text{окр}^2)}=\Delta m_\text{пр}\sqrt{2}\approx0{,}007\;\text{г}.
+\end{gather*}
+
+Абсолютная ошибка измерения плотности вычисляется, как
+\[
+\begin{split}
+	\Delta\rho & =\sqrt{\left(\frac{\partial\rho}{\partial m}\,\Delta m\right)^2+\left(\frac{\partial\rho}{\partial M}\,\Delta M\right)^2+\left(\frac{\partial\rho}{\partial M_0}\,\Delta M_0\right)^2}= \\
+	& =\Delta m\sqrt{\left(\frac{\partial\rho}{\partial m}\right)^2+\left(\frac{\partial\rho}{\partial M}\right)^2+\left(\frac{\partial\rho}{\partial M_0}\right)^2},
+\end{split}
+\]
+поскольку $\Delta M=\Delta M_0=\Delta m$. При этом,
+\begin{gather*}
+\frac{\partial\rho}{\partial m}=\frac{M-M_0}{(m+M-M_0)^2}(\delta-\lambda), \\
+\frac{\partial\rho}{\partial M}=-\frac{m}{(m+M-M_0)^2}(\delta-\lambda), \\
+\frac{\partial\rho}{\partial M_0}=\frac{m}{(m+M-M_0)^2}(\delta-\lambda),
+\end{gather*}
+а значит,
+\[
+\Delta\rho=\frac{\sqrt{(M-M_0)^2+2m^2}}{(m+M-M_0)^2}(\delta-\lambda)\,\Delta m\approx0{,}0405\;\text{г/см}^3
+\]
+и
+\[
+\varepsilon_\rho=\frac{\Delta\rho}{\rho}\cdot100\%\approx0{,}38\%.
+\]
+
+\begin{table}[h!]
+	\begin{center}
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		$\rho$, г/см$^3$ & $\Delta\rho$, г/см$^3$ & $\varepsilon_\rho$, \% & $\rho\pm\Delta\rho$, г/см$^3$ \\
+		\hline
+		$10{,}7414$ & $0{,}0405$ & $0{,}38$ & $10{,}7414\pm0{,}0405$ \\
+		\hline
+	\end{tabular}
+	\caption{Результаты вычисления плотности}\label{TbTwo}
+	\end{center}
+\end{table}
