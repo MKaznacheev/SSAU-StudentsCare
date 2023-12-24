@@ -1,0 +1,94 @@
+\subsection{6}
+
+Точка движется вдоль оси $Ox$ согласно графику, изображенному на рисунке~\ref{pic:6.1}. Построим графики изменения ускорения и скорости движения. Определим начальную и средние (в интервале от $t_0=0\;\text{с}$ до $t_1=8\;\text{с}$) скорости движения.
+
+\begin{figure}[h!]
+	\begin{center}
+		\begin{tikzpicture}[yscale=0.2, xscale=0.6, domain=0:8]
+			\draw[very thin, color=gray] (0,0) grid (12,20);
+			\draw [arrows = {-Straight Barb[scale=1]}] (0,0) -- (12,0) node [sloped, below] {$t$, с};
+			\draw [arrows = {-Straight Barb[scale=1]}] (0,0) -- (0,20) node [sloped, left] {$x$, м};
+			\draw node [below left] at (0,0) {$0$};
+			\draw node [below] at (4,0) {$4$};
+			\draw node [below] at (8,0) {$8$};
+			\draw node [left] at (0,16) {$16$};
+			\draw[color=red, smooth, thick] plot (\x,{8*\x-\x*\x});
+		\end{tikzpicture}
+		\caption{. Функция $x(t)$}\label{pic:6.1}
+	\end{center}
+\end{figure}
+
+Обратим внимание на рисунок~\ref{pic:6.1}. На нём изображена парабола
+\[
+x(t)=a+bt+ct^2,
+\]
+где $a$, $b$, $c$ --- некоторые постоянные. Она пересекает ось абсцисс в точках $(0,0)$ и $(8,0)$, а её вершина лежит в точке $(4,16)$, значит
+\[
+\begin{cases}
+x(0)=0 \\
+x(8)=0 \\
+x(4)=16
+\end{cases}
+\Leftrightarrow\quad
+\begin{cases}
+a=0 \\
+a+8b+8^2c=0 \\
+a+4b+4^2c=16.
+\end{cases}
+\]
+Решая систему, найдём, что $a=0$, $b=8$ и $c=-1$, то есть $x(t)=8t-t^2$. Тогда для скорости имеем
+\[
+v(t)=\frac{dx}{dt}=8-2t,
+\]
+а для ускорения ---
+\[
+a(t)=\frac{dv}{dt}=-2\;\text{м/с}^2.
+\]
+При этом, конечно, имеются ввиду проекции величин на ось, вдоль которой происходит движение. Построим соответствующие графики (рисунок~\ref{pic:6.2}).
+
+\begin{figure}[h!]
+	\begin{center}
+		\subfloat{
+		\begin{tikzpicture}[scale=0.4, domain=0:8]
+			\draw[very thin, color=gray] (0,-10) grid (8,10);
+			\draw [arrows = {-Straight Barb[scale=1]}] (0,0) -- (8,0) node [sloped, below] {$t$, с};
+			\draw [arrows = {-Straight Barb[scale=1]}] (0,-10) -- (0,10) node [sloped, left] {$v$, м/с};
+			\draw node [left] at (0,0) {$0$};
+			\draw node [below] at (4,0) {$4$};
+			\draw node [left] at (0,8) {$8$};
+			\draw[color=red, smooth, thick] plot (\x,{8-2*\x});
+		\end{tikzpicture}
+		}
+		%\hfill
+		\subfloat{
+		\begin{tikzpicture}[scale=0.6, domain=0:8]
+			\draw[very thin, color=gray] (0,-4) grid (8,4);
+			\draw [arrows = {-Straight Barb[scale=1]}] (0,0) -- (8,0) node [sloped, below] {$t$, с};
+			\draw [arrows = {-Straight Barb[scale=1]}] (0,-4) -- (0,4) node [sloped, left] {$a$, м/с$^2$};
+			\draw node [left] at (0,0) {$0$};
+			\draw node [left] at (0,-2) {$-2$};
+			\draw[color=red, smooth, thick] plot (\x,-2);
+		\end{tikzpicture}
+		}
+		\caption{. Функции $v(t)$ (слева) и $a(t)$ (справа)}\label{pic:6.2}
+	\end{center}
+\end{figure}
+
+Как видно из графика функции $v(t)$, начальная скорость (скорость в момент времени $t_0=0\;\text{с}$) равняется $v_0=8\;\text{м/с}$. Определить среднюю скорость перемещения точки (точнее, её проекцию) можно по формуле
+\[
+\vec v_\text{ср}=\frac{\Delta\vec r}{\Delta t}.
+\]
+Однако, в интересующем нас промежутке времени, $\Delta r=\vec r(t_1)-\vec r(t_0)=\vec 0$, поскольку $x(t_0)=x(t_1)=0\;\text{м}$, а значит $\vec v_\text{ср}=\vec 0$.
+
+Глядя на график функции $x(t)$, нетрудно догадаться, что путь, пройденный точкой в интервале времени $(0,8)$, можно вычислить, как
+\[
+s=2x(4)=32\;\text{м},
+\]
+поскольку точка проходит одинаковое расстояние, за промежутки $(0,4)$ и $(4,8)$. Тогда средняя путевая скорость вычисляется по формуле
+\[
+v_\text{ср}=\frac{s}{t},
+\]
+где $t=t_1-t_0=t_1$:
+\[
+v_\text{ср}=\frac{s}{t_1}=4\;\text{м/с}.
+\]

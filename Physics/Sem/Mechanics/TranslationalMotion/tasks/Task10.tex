@@ -1,0 +1,34 @@
+\subsection{10}
+
+Капля дождя при скорости ветра $v=11\;\text{м/c}$ падает под углом $\alpha=30^\circ$ к вертикали. Определим, при какой скорости ветра капля воды будет падать под углом $\beta=45^\circ$.
+
+\begin{figure}[h!]
+	\begin{center}
+		\begin{tikzpicture}
+			\draw (0,0) -- (8,0);
+			\foreach \x in {1,...,40} \draw (\x/5,0) -- (\x/5-0.2,-0.2);
+			\draw [arrows = {-Stealth[scale=1]}, thick] (4,2.5) to node [sloped, above right] {$\vec v$} (5,2.5);
+			\draw [arrows = {-Stealth[scale=1]}, thick] (4,2.5) to node [sloped, above] {$\vec u$}  (5,1);
+			\draw [arrows = {-Stealth[scale=1]}, thick] (4,2.5) to node [below left] {$\vec \nu$}  (4,1);
+			\draw [densely dashed] (4,3) -- (4,0.3);
+			\draw [densely dashed] (4,1) -- (5,1) -- (5,2.5);
+			\draw (4,1.8) arc [start angle=270, end angle = 303, radius=0.7];
+			\draw node at (4.135,2) {$\alpha$};
+			\draw (4,1.3) -- (4.3,1.3) -- (4.3,1);
+		\end{tikzpicture}
+		\caption{}\label{pic:10.1}
+	\end{center}
+\end{figure}
+
+Обозначим скорость капли через $\vec u$, а вертикальную составляющую скорости --- через $\vec \nu$. Из рисунка~\ref{pic:10.1} видно, что
+\[
+\tg\alpha=\frac{v}{\nu}\Rightarrow v=\nu\tg\alpha.
+\]
+Так выглядит общая формула зависимости угла, под которым падает капля, от скорости ветра. При этом величина вектора $\vec\nu$ не зависит от скорости ветра:
+\[
+\nu=\frac{v}{\tg\alpha}=\text{const}.
+\]
+В том случае, если скорость капли составляет с вертикалью угол $\beta$, общий вид выражения скорости ветра не меняется:
+\[
+v_1=\nu\tg\beta=\frac{\tg\beta}{\tg\alpha}v=11\sqrt3\approx19{,}1\;\text{м/с}.
+\]
